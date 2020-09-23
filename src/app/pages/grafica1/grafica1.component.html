@@ -1,1 +1,14 @@
-<p>grafica1 works!</p>
+<div class="row">
+    <div class="col-6">
+        <app-grafica title='Sales' [data]="salesData" [colors]="colors" [labels]="salesLabels" type="doughnut"></app-grafica>
+    </div>
+    <div class="col-6">
+        <app-grafica title='Products' [data]="productoData" [colors]="colors" [labels]="productLabels" type="doughnut"></app-grafica>
+    </div>
+    <div class="col-6">
+        <app-grafica title='Persons' [data]="personData" [colors]="colors" [labels]="personLabels" type="doughnut"></app-grafica>
+    </div>
+    <div class="col-6">
+        <app-grafica title='Jobs' [data]="jobData" [colors]="colors" [labels]="jobLabels" type="doughnut"></app-grafica>
+    </div>
+</div>
