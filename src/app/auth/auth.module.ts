@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 import { RegistrerComponent } from './registrer/registrer.component';
 import { LoginComponent } from './login/login.component';
-
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -18,7 +19,10 @@ import { LoginComponent } from './login/login.component';
   ],
   imports: [
     RouterModule,
-    CommonModule
+    CommonModule,
+    FormsModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ]
 })
 export class AuthModule { }
